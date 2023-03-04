@@ -3,7 +3,7 @@ import { Card, CardHeader, CardContent, Typography, Grid, Divider } from '@mater
 import { useSpeechContext } from '@speechly/react-client';
 // import { ExpenseTrackerContext } from '../../context/context';
 import useStyles from './styles';
-// import Form from './Form/Form';
+import Form from './Form/Form';
 // import List from './List/List';
 // import InfoCard from '../InfoCard';
 
@@ -23,7 +23,7 @@ const Main = () => {
                   try saying income of 1 hunderd dollars in category salary for monday 
               </Typography>
               <Divider />
-              {/* {form} */}
+              <Form/>
           </CardContent>
           <CardContent className ={classes.cardContent}>
               <Grid container spacing={2}>
