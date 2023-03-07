@@ -44,7 +44,7 @@ const App = () => {
       <PushToTalkButtonContainer>
         <PushToTalkButton>  
         </PushToTalkButton>
-        <ErrorPanel/>
+        {/* <ErrorPanel/> */}
         </PushToTalkButtonContainer>
     </div>
   )
