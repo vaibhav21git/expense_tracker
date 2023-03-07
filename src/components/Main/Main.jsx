@@ -5,7 +5,7 @@ import { ExpenseTrackerContext } from '../../context/context';
 import useStyles from './styles';
 import Form from './Form/Form';
 import List from './List/List';
-// import InfoCard from '../InfoCard';
+import InfoCard from '../InfoCard';
 
 
 
@@ -21,8 +21,8 @@ const Main = () => {
           <CardContent>
               <Typography align="center" variant="h5">Total Balance ${balance}</Typography>
               <Typography variant="subtitle1" style={{ lineHeight: '1.5em', marginTop: '20px' }}>
-              {/* <infocard></infocard> */}
-                  try saying income  good of 1 hunderd dollars in category salary for monday 
+              <InfoCard/>
+
               </Typography>
               <Divider />
               <Form/>
