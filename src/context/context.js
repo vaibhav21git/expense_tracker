@@ -21,6 +21,7 @@ export const Provider = ({ children }) =>
     dispatch({ type: 'ADD_TRANSACTION', payload:  transaction});
   }
 
+  const balance = transactions.reduce((acc, currval) => {currval.type ==='Expense'? acc+=currval.amount:acc-=currval.amount}, 0);
 
 
     return (
@@ -28,7 +29,8 @@ export const Provider = ({ children }) =>
       <ExpenseTrackerContext.Provider value={{
         deleteTransaction,
         addTransaction,
-        transactions
+        transactions,
+        balance
         }}>
           {children}  
         </ExpenseTrackerContext.Provider>
