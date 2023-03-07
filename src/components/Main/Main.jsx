@@ -13,7 +13,7 @@ const Main = () => {
 
     const classes = useStyles();
 
-    const balance = useContext(ExpenseTrackerContext);
+    const { balance } = useContext(ExpenseTrackerContext);
 
   return (
       <Card className={classes.root}>
